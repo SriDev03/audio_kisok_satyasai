@@ -3,205 +3,492 @@
     "id": "0",
     "title": "Anger and Stress",
     "audios": [
-      "Do not be angry in your life",
-      "Lack of patience leads to anger",
-      "Limitless human desires are the cause for unrest",
-      "Man's anger and desire are ruining him",
-      "Selfishness is the cause for man's distress"
+      {
+        "topic_name": "Do not be angry in your life",
+        "aud": "/audios/Anger_Stress/1.mp3"
+      },
+      {
+        "topic_name": "Lack of patience leads to anger",
+        "aud": "/audios/Anger_Stress/2.mp3"
+      },
+      {
+        "topic_name": "Limitless human desires are the cause for unrest",
+        "aud": "/audios/Anger_Stress/3.mp3"
+      },
+      {
+        "topic_name": "Man's anger and desire are ruining him",
+        "aud": "/audios/Anger_Stress/4.mp3"
+      },
+      {
+        "topic_name": "Selfishness is the cause for man's distress",
+        "aud": "/audios/Anger_Stress/5.mp3"
+      }
     ]
   },
   {
     "id": "1",
     "title": "Environment and society",
     "audios": [
-      "Man's relationship with society",
-      "Swami on depletion of ozone layer",
-      "We need to show gratitude towards society",
-      "Youth should have more patience- with Analogies"
+      {
+        "topic_name": "Man's relationship with society",
+        "aud": "/audios/Environment_society/1.mp3"
+      },
+      {
+        "topic_name": "Swami on depletion of ozone layer",
+        "aud": "/audios/Environment_society/2.mp3"
+      },
+      {
+        "topic_name": "We need to show gratitude towards society",
+        "aud": "/audios/Environment_society/3.mp3"
+      },
+      {
+        "topic_name": "Youth should have more patience- with Analogies",
+        "aud": "/audios/Environment_society/4.mp3"
+      }
     ]
   },
   {
     "id": "2",
     "title": "Finance",
     "audios": [
-      "Man is deluded by Money With analogy",
-      "Man is important and not money",
-      "Sacrifice leads to immortality Story from Shirdi Baba Life Story"
+      {
+        "topic_name": "Man is deluded by Money With analogy",
+        "aud": "/audios/Finance/1.mp3"
+      },
+      {
+        "topic_name": "Man is important and not money",
+        "aud": "/audios/Finance/2.mp3"
+      },
+      {
+        "topic_name": "Sacrifice leads to immortality Story from Shirdi Baba Life Story",
+        "aud": "/audios/Finance/3.mp3"
+      }
     ]
   },
   {
     "id": "3",
     "title": "God and creation",
     "audios": [
-      "God is your true Guru",
-      "Krishna- Radha Tatwa",
-      "Man can put an end to the cycle of birth and death",
-      "Maya or illusion never harms you",
-      "Nothing is permanent in this world except for Atma",
-      "Scriptures and Puranas proclaim truth",
-      "Swami explaining the role and workings of Pancha Koshas",
-      "You are God , search within"
+      {
+        "topic_name": "God is your true Guru",
+        "aud": "/audios/God_Creation/1.mp3"
+      },
+      {
+        "topic_name": "Krishna- Radha Tatwa",
+        "aud": "/audios/God_Creation/2.mp3"
+      },
+      {
+        "topic_name": "Man can put an end to the cycle of birth and death",
+        "aud": "/audios/God_Creation/3.mp3"
+      },
+      {
+        "topic_name": "Maya or illusion never harms you",
+        "aud": "/audios/God_Creation/4.mp3"
+      },
+      {
+        "topic_name": "Nothing is permanent in this world except for Atma",
+        "aud": "/audios/God_Creation/5.mp3"
+      },
+      {
+        "topic_name": "Scriptures and Puranas proclaim truth",
+        "aud": "/audios/God_Creation/6.mp3"
+      },
+      {
+        "topic_name": "Swami explaining the role and workings of Pancha Koshas",
+        "aud": "/audios/God_Creation/7.mp3"
+      },
+      {
+        "topic_name": "You are God , search within",
+        "aud": "/audios/God_Creation/8.mp3"
+      }
     ]
   },
   {
     "id": "4",
     "title": "Health & Food",
     "audios": [
-      "Doctor are concentrating on physical and not mental illness",
-      "Eat less, talk less",
-      "Limited food intake is good for Body",
-      "Sugar is root cause of cancer",
-      "Understand power of thoughts",
-      "We need to take food that gives strength"
+      {
+        "topic_name": "Doctor are concentrating on physical and not mental illness",
+        "aud": "/audios/Health_Food/1.mp3"
+      },
+      {
+        "topic_name": "Eat less, talk less",
+        "aud": "/audios/Health_Food/2.mp3"
+      },
+      {
+        "topic_name": "Limited food intake is good for Body",
+        "aud": "/audios/Health_Food/3.mp3"
+      },
+      {
+        "topic_name": "Sugar is root cause of cancer",
+        "aud": "/audios/Health_Food/4.mp3"
+      },
+      {
+        "topic_name": "Understand power of thoughts",
+        "aud": "/audios/Health_Food/5.mp3"
+      },
+      {
+        "topic_name": "We need to take food that gives strength",
+        "aud": "/audios/Health_Food/6.mp3"
+      }
     ]
   },
   {
     "id": "5",
     "title": "His Life",
     "audios": [
-      "Don't get attached to the body Swami's example",
-      "My Life is My Message"
+      {
+        "topic_name": "Don't get attached to the body Swami's example",
+        "aud": "/audios/His_life/1.mp3"
+      },
+      {
+        "topic_name": "My Life is My Message",
+        "aud": "/audios/His_life/2.mp3"
+      }
     ]
   },
   {
     "id": "6",
     "title": "Human Values",
     "audios": [
-      "All our acts must be done righteously",
-      "Character and discipline are two important qualities for any nation",
-      "Dharma and Adharma",
-      "Human life rests on human values",
-      "Truth and love are basis for our life",
-      "Uphold truth and righteousness",
-      "When you lead life with Dharma, Artha and Kama in proper balance, you will attain Moksha",
-      "Without patience, peace is not conferred"
+      {
+        "topic_name": "All our acts must be done righteously",
+        "aud": "/audios/Human_Values/1.mp3"
+      },
+      {
+        "topic_name": "Character and discipline are two important qualities for any nation",
+        "aud": "/audios/Human_Values/2.mp3"
+      },
+      {
+        "topic_name": "Dharma and Adharma",
+        "aud": "/audios/Human_Values/3.mp3"
+      },
+      {
+        "topic_name": "Human life rests on human values",
+        "aud": "/audios/Human_Values/4.mp3"
+      },
+      {
+        "topic_name": "Truth and love are basis for our life",
+        "aud": "/audios/Human_Values/5.mp3"
+      },
+      {
+        "topic_name": "Uphold truth and righteousness",
+        "aud": "/audios/Human_Values/6.mp3"
+      },
+      {
+        "topic_name": "When you lead life with Dharma, Artha and Kama in proper balance, you will attain Moksha",
+        "aud": "/audios/Human_Values/7.mp3"
+      },
+      {
+        "topic_name": "Without patience, peace is not conferred",
+        "aud": "/audios/Human_Values/8.mp3"
+      }
     ]
   },
   {
     "id": "7",
     "title": "Karma",
     "audios": [
-      "All are karma should be selfless",
-      "Bhagawan on Karma and Punishment",
-      "Importance of Karma or action with Analogy",
-      "Talli Garbhamunundi"
+      {
+        "topic_name": "All are karma should be selfless",
+        "aud": "/audios/Karma/1.mp3"
+      },
+      {
+        "topic_name": "Bhagawan on Karma and Punishment",
+        "aud": "/audios/Karma/2.mp3"
+      },
+      {
+        "topic_name": "Importance of Karma or action with Analogy",
+        "aud": "/audios/Karma/3.mp3"
+      },
+      {
+        "topic_name": "Talli Garbhamunundi",
+        "aud": "/audios/Karma/4.mp3"
+      }
     ]
   },
   {
     "id": "8",
     "title": "Life and Living",
     "audios": [
-      "Born as a human behave like one",
-      "How will power can make or mar a person",
-      "Human character is most imporatant",
-      "Man is important and not money",
-      "Sense control is important",
-      "Tell me your company"
+      {
+        "topic_name": "Born as a human behave like one",
+        "aud": "/audios/Life_Living/1.mp3"
+      },
+      {
+        "topic_name": "How will power can make or mar a person",
+        "aud": "/audios/Life_Living/2.mp3"
+      },
+      {
+        "topic_name": "Human character is most imporatant",
+        "aud": "/audios/Life_Living/3.mp3"
+      },
+      {
+        "topic_name": "Man is important and not money",
+        "aud": "/audios/Life_Living/4.mp3"
+      },
+      {
+        "topic_name": "Sense control is important",
+        "aud": "/audios/Life_Living/5.mp3"
+      },
+      {
+        "topic_name": "Tell me your company",
+        "aud": "/audios/Life_Living/4.mp3"
+      }
     ]
   },
   {
     "id": "9",
     "title": "Relationships",
     "audios": [
-      "Cultivate Love and Reverence",
-      "Life's journey is all about, 'I' to 'WE'",
-      "Reverence to Parents linked to Indian culture",
-      "We can achieve alot when we are united Story of father and five sons"
+      {
+        "topic_name": "Cultivate Love and Reverence",
+        "aud": "/audios/Relationships/1.mp3"
+      },
+      {
+        "topic_name": "Life's journey is all about, 'I' to 'WE'",
+        "aud": "/audios/Relationships/2.mp3"
+      },
+      {
+        "topic_name": "Reverence to Parents linked to Indian culture",
+        "aud": "/audios/Relationships/3.mp3"
+      },
+      {
+        "topic_name": "We can achieve alot when we are united Story of father and five sons",
+        "aud": "/audios/Relationships/4.mp3"
+      }
     ]
   },
   {
     "id": "10",
     "title": "Sadhana",
     "audios": [
-      "Awake, arise stop not till the goal is reached",
-      "Every Sadhana must lead you on the inward journey",
-      "Loving God is the true Sadhana",
-      "Without love spiritual sadhana is a waste",
-      "Your heart is the seat of the Lord, it is reserved for Him"
+      {
+        "topic_name": "Awake, arise stop not till the goal is reached",
+        "aud": "/audios/Sadhana/1.mp3"
+      },
+      {
+        "topic_name": "Every Sadhana must lead you on the inward journey",
+        "aud": "/audios/Sadhana/2.mp3"
+      },
+      {
+        "topic_name": "Loving God is the true Sadhana",
+        "aud": "/audios/Sadhana/3.mp3"
+      },
+      {
+        "topic_name": "Without love spiritual sadhana is a waste",
+        "aud": "/audios/Sadhana/4.mp3"
+      },
+      {
+        "topic_name": "Your heart is the seat of the Lord, it is reserved for Him",
+        "aud": "/audios/Sadhana/5.mp3"
+      }
     ]
   },
   {
     "id": "11",
     "title": "Sanathana Samskriti",
     "audios": [
-      "Everything is present in Vedas",
-      "Through vedas one can attain Brahmanatwa and Brahmatattwa",
-      "Vedas classified into three Samhithas",
-      "What are Vedas, their origin and significance",
-      "Where Vedas end, Vedanta begins, explanation of Vedanta"
+      {
+        "topic_name": "Everything is present in Vedas",
+        "aud": "/audios/Sanathana_Samskriti/1.mp3"
+      },
+      {
+        "topic_name": "Life's journey is all about, 'I' to 'WE'",
+        "aud": "/audios/Sanathana_Samskriti/2.mp3"
+      },
+      {
+        "topic_name": "Reverence to Parents linked to Indian culture",
+        "aud": "/audios/Sanathana_Samskriti/3.mp3"
+      },
+      {
+        "topic_name": "We can achieve alot when we are united Story of father and five sons",
+        "aud": "/audios/Sanathana_Samskriti/4.mp3"
+      },
+      {
+        "topic_name": "We can achieve alot when we are united Story of father and five sons",
+        "aud": "/audios/Sanathana_Samskriti/5.mp3"
+      }
     ]
   },
   {
     "id": "12",
     "title": "Service",
     "audios": [
-      "Chant the name of the Lord and do service",
-      "Do service and do not waste time in mere talk",
-      "Giving talks would take you no where, Do service",
-      "Service is the highest form of worship",
-      "Seva redeems man's life",
-      "What is Seva and how Seva instills in you courage and determination"
+      {
+        "topic_name": "Chant the name of the Lord and do service",
+        "aud": "/audios/Service/1.mp3"
+      },
+      {
+        "topic_name": "Do service and do not waste time in mere talk",
+        "aud": "/audios/Service/2.mp3"
+      },
+      {
+        "topic_name": "Service is the highest form of worship",
+        "aud": "/audios/Service/3.mp3"
+      },
+      {
+        "topic_name": "Seva redeems man's life",
+        "aud": "/audios/Service/4.mp3"
+      },
+      {
+        "topic_name": "What is Seva and how Seva instills in you courage and determination",
+        "aud": "/audios/Service/5.mp3"
+      }
     ]
   },
   {
     "id": "13",
     "title": "Transformation",
     "audios": [
-      "As is our association , so is our mind",
-      "Be a change before you spire for it",
-      "Do not control your vices",
-      "Human character is most important",
-      "Man should get rid of selfishness and self interest ",
-      "Practice is more important than preaching",
-      "Role of meditation for steady mind",
-      "Story of valmiki",
-      "True devotees do not have bad qualities"
+      {
+        "topic_name": "As is our association , so is our mind",
+        "aud": "/audios/Transformation/1.mp3"
+      },
+      {
+        "topic_name": "Be a change before you spire for it",
+        "aud": "/audios/Transformation/2.mp3"
+      },
+      {
+        "topic_name": "Do not control your vices",
+        "aud": "/audios/Transformation/3.mp3"
+      },
+      {
+        "topic_name": "Human character is most important",
+        "aud": "/audios/Transformation/4.mp3"
+      },
+      {
+        "topic_name": "Man should get rid of selfishness and self interest ",
+        "aud": "/audios/Transformation/5.mp3"
+      },
+      {
+        "topic_name": "Practice is more important than preaching",
+        "aud": "/audios/Transformation/6.mp3"
+      },
+      {
+        "topic_name": "Role of meditation for steady mind",
+        "aud": "/audios/Transformation/7.mp3"
+      },
+      {
+        "topic_name": "Story of valmiki",
+        "aud": "/audios/Transformation/8.mp3"
+      },
+      {
+        "topic_name": "True devotees do not have bad qualities",
+        "aud": "/audios/Transformation/9.mp3"
+      }
     ]
   },
   {
     "id": "14",
     "title": "Unique Insights",
     "audios": [
-      "Develop Selflessness like Krishna",
-      "If you have faith, God himself will be a puppet in your hand",
-      "The purpose of Life is to know who you areThe purpose of Life is to know who you are",
-      "What is Amanaskamu in Vedanta",
-      "What is Rest?",
-      "Who are the sinners? Analogy from Mahabharatha"
+      {
+        "topic_name": "Develop Selflessness like Krishna",
+        "aud": "/audios/Unique_Insights/1.mp3"
+      },
+      {
+        "topic_name": "If you have faith, God himself will be a puppet in your hand",
+        "aud": "/audios/Unique_Insights/2.mp3"
+      },
+      {
+        "topic_name": "The purpose of Life is to know who you areThe purpose of Life is to know who you are",
+        "aud": "/audios/Unique_Insights/3.mp3"
+      },
+      {
+        "topic_name": "What is Amanaskamu in Vedanta",
+        "aud": "/audios/Unique_Insights/4.mp3"
+      },
+      {
+        "topic_name": "What is Rest?",
+        "aud": "/audios/Unique_Insights/5.mp3"
+      },
+      {
+        "topic_name": "Who are the sinners? Analogy from Mahabharatha",
+        "aud": "/audios/Unique_Insights/5.mp3"
+      }
     ]
   },
   {
     "id": "15",
     "title": "Unity of faith",
     "audios": [
-      "Essence all religions is the religion of Sathya Sai",
-      "Religions and their practices are different, But God is one",
-      "Religions are many God is one Analogy of a Veena",
-      "Unity makes India ideal",
-      "We need to learn to see unity in diversity With analogies"
+      {
+        "topic_name": "Essence all religions is the religion of Sathya Sai",
+        "aud": "/audios/Unity/1.mp3"
+      },
+      {
+        "topic_name": "Religions and their practices are different, But God is one",
+        "aud": "/audios/Unity/2.mp3"
+      },
+      {
+        "topic_name": "Religions are many God is one Analogy of a Veena",
+        "aud": "/audios/Unity/3.mp3"
+      },
+      {
+        "topic_name": "Unity makes India ideal",
+        "aud": "/audios/Unity/4.mp3"
+      },
+      {
+        "topic_name": "We need to learn to see unity in diversity With analogies",
+        "aud": "/audios/Unity/5.mp3"
+      }
     ]
   },
   {
     "id": "16",
     "title": "Vidya",
     "audios": [
-      "Education without purpose is useless",
-      "Impart both Spiritual and Secular education",
-      "Swami on worldly and spiritual education",
-      "The third eye for man is knowledge",
-      "What is true education?"
+      {
+        "topic_name": "Education without purpose is useless",
+        "aud": "/audios/Vidya/1.mp3"
+      },
+      {
+        "topic_name": "Impart both Spiritual and Secular education",
+        "aud": "/audios/Vidya/2.mp3"
+      },
+      {
+        "topic_name": "Swami on worldly and spiritual education",
+        "aud": "/audios/Vidya/3.mp3"
+      },
+      {
+        "topic_name": "The third eye for man is knowledge",
+        "aud": "/audios/Vidya/4.mp3"
+      },
+      {
+        "topic_name": "What is true education?",
+        "aud": "/audios/Vidya/5.mp3"
+      }
     ]
   },
   {
     "id": "17",
     "title": "Work, Worship and Wisdom",
     "audios": [
-      "Duty and Truth are verily God",
-      "Eat less, talk less, work more and derive great joy",
-      "How to develop Shraddha?",
-      "How to understand Atma, By Shankara Disciples",
-      "Treat every given work as god's work, then you would be happy",
-      "With sincerity we can achieve anything"
+      {
+        "topic_name": "Duty and Truth are verily God",
+        "aud": "/audios/Wisdom/1.mp3"
+      },
+      {
+        "topic_name": "Eat less, talk less, work more and derive great joy",
+        "aud": "/audios/Wisdom/2.mp3"
+      },
+      {
+        "topic_name": "How to develop Shraddha?",
+        "aud": "/audios/Wisdom/3.mp3"
+      },
+      {
+        "topic_name": "How to understand Atma, By Shankara Disciples",
+        "aud": "/audios/Wisdom/4.mp3"
+      },
+      {
+        "topic_name": "Treat every given work as god's work, then you would be happy",
+        "aud": "/audios/Wisdom/5.mp3"
+      },
+      {
+        "topic_name": "With sincerity we can achieve anything",
+        "aud": "/audios/Wisdom/5.mp3"
+      }
     ]
   }
 ]

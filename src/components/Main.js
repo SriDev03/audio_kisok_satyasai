@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import TopicCard from "./TopicCard";
 import { useState, useEffect } from "react";
 import "./Main.css";
+import ReactAudioPlayer from "react-audio-player";
 import data from "../assets/data/data.json";
 import bg from "../assets/background.jpg";
 import aud_mand from "../assets/aud_mandala.svg";
@@ -14,6 +15,7 @@ function Main() {
   const handleShow = () => setShow(true);
   const [selectedTop, setselectedTop] = useState("");
   const [selectedAud, setselectedAud] = useState("");
+  const [selectedMusic, setselectedMusic] = useState("");
 
   const topicSelected = (svid) => {
     setselectedTop(svid);
@@ -68,7 +70,7 @@ function Main() {
                     return (
                       <>
                         <div className="fade_rule"></div>
-
+                        {console.log(item)}
                         <Col xs lg={2} style={{ textAlign: "end" }}>
                           <img
                             className="play_mand p-2"
@@ -80,13 +82,16 @@ function Main() {
                           <p
                             key={index}
                             className={
-                              selectedAud === item ? "selectedAud" : "list_item"
+                              selectedAud === item.topic_name
+                                ? "selectedAud"
+                                : "list_item"
                             }
                             onClick={() => {
-                              setselectedAud(item);
+                              setselectedAud(item.topic_name);
+                              setselectedMusic(item.aud);
                             }}
                           >
-                            {item}
+                            {item.topic_name}
                           </p>
                         </Col>
                       </>
@@ -98,6 +103,7 @@ function Main() {
                   onClick={() => {
                     handleClose();
                     setselectedAud("");
+                    setselectedMusic("");
                   }}
                 >
                   <img className="lang_mandala" src={lang_mand} alt="..." />
@@ -105,6 +111,11 @@ function Main() {
                 </div>
               </Row>
             </Container>
+            {/* <audio controls autoPlay>
+              <source src={selectedMusic} type="audio/mpeg" />
+            </audio> */}
+
+            <ReactAudioPlayer src={selectedMusic} controls autoPlay />
           </>
         ) : null
       ) : null}
