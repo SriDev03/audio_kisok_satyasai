@@ -8,6 +8,7 @@ import bg from "../assets/background.jpg";
 import aud_mand from "../assets/aud_mandala.svg";
 import lang_mand from "../assets/lang_mandala.svg";
 import mandala from "../assets/mandala.svg";
+const { ipcRenderer } = window.require("electron");
 
 function Main() {
   const [show, setShow] = useState(false);
@@ -89,6 +90,14 @@ function Main() {
                             onClick={() => {
                               setselectedAud(item.topic_name);
                               setselectedMusic(item.aud);
+                              setInterval(
+                                () =>
+                                  ipcRenderer.invoke(
+                                    "timestamp",
+                                    0 + " " + 0 + " " + "halt"
+                                  ),
+                                1000
+                              );
                             }}
                           >
                             {item.topic_name}
@@ -115,7 +124,7 @@ function Main() {
               <source src={selectedMusic} type="audio/mpeg" />
             </audio> */}
 
-            <ReactAudioPlayer src={selectedMusic} controls autoPlay />
+            <audio id="audioTime" src={selectedMusic} controls autoPlay></audio>
           </>
         ) : null
       ) : null}
