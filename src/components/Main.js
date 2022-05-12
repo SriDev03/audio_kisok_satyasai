@@ -18,8 +18,21 @@ function Main() {
   const [selectedAud, setselectedAud] = useState("");
   const [selectedMusic, setselectedMusic] = useState("");
 
+  let time_stamp = document.getElementById("audioTime")?.currentTime;
+
   const topicSelected = (svid) => {
     setselectedTop(svid);
+  };
+
+  const handleTimestamp = () => {
+    setInterval(() => {
+      time_stamp = document.getElementById("audioTime")?.currentTime;
+      if (document.getElementById("audioTime")?.play == true) {
+        ipcRenderer.invoke("timestamp", 0 + " " + time_stamp + " " + "run");
+      } else {
+        ipcRenderer.invoke("timestamp", 0 + " " + 0 + " " + "halt");
+      }
+    }, 1000);
   };
   return (
     <div
@@ -90,14 +103,7 @@ function Main() {
                             onClick={() => {
                               setselectedAud(item.topic_name);
                               setselectedMusic(item.aud);
-                              setInterval(
-                                () =>
-                                  ipcRenderer.invoke(
-                                    "timestamp",
-                                    0 + " " + 0 + " " + "halt"
-                                  ),
-                                1000
-                              );
+                              handleTimestamp();
                             }}
                           >
                             {item.topic_name}
@@ -124,7 +130,23 @@ function Main() {
               <source src={selectedMusic} type="audio/mpeg" />
             </audio> */}
 
-            <audio id="audioTime" src={selectedMusic} controls autoPlay></audio>
+            <audio
+              onPlay={() =>
+                ipcRenderer
+                  .invoke("broadcast", 0 + " " + 0 + " " + "run")
+                  .then((result) => {
+                    // ...
+                    //console.log(result);
+                  })
+              }
+              id="audioTime"
+              src={selectedMusic}
+              controls
+              autoPlay
+              onEnded={() => {
+                ipcRenderer.invoke("timestamp", 0 + " " + 0 + " " + "halt");
+              }}
+            ></audio>
           </>
         ) : null
       ) : null}
