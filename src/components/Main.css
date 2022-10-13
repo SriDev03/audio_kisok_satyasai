@@ -101,10 +101,13 @@
   animation: spin 200s linear infinite;
 }
 
+.display_host {
+  padding-top: 12%;
+}
+
 .display_cont {
-  margin-top: 12%;
   height: 500px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 .selectedTop {
@@ -175,7 +178,7 @@
 .lang {
   position: absolute;
   bottom: 50px;
-  right: 2%;
+  right: 0%;
   /* animation: fadeInAnimation ease 1s; */
   animation: zoom-out-zoom-in ease-in 1s;
 }

@@ -125,7 +125,7 @@ function createWindow() {
       enableRemoteModule: true,
     },
   });
-  mainWindow.setFullScreen(!true);
+  mainWindow.setFullScreen(true);
 
   // and load the index.html of the app.
   // mainWindow.loadFile("index.html");

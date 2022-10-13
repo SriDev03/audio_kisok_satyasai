@@ -1,5 +1,5 @@
 import "./Main.css";
-import mandala from "../assets/mandala.svg";
+import mandala from "../assets/mandala.png";
 
 function TopicCard({ topicId, topic, topicSelected, handleShow }) {
   return (

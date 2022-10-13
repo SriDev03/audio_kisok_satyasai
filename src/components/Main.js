@@ -2,12 +2,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import TopicCard from "./TopicCard";
 import { useState, useEffect } from "react";
 import "./Main.css";
-import ReactAudioPlayer from "react-audio-player";
+
 import data from "../assets/data/data.json";
-import bg from "../assets/background.jpg";
-import aud_mand from "../assets/aud_mandala.svg";
+import bg from "../assets/background1.jpg";
+import aud_mand from "../assets/aud_mandala.png";
 import lang_mand from "../assets/lang_mandala.svg";
-import mandala from "../assets/mandala.svg";
+import mandala from "../assets/mandala.png";
 const { ipcRenderer } = window.require("electron");
 
 function Main() {
@@ -17,23 +17,32 @@ function Main() {
   const [selectedTop, setselectedTop] = useState("");
   const [selectedAud, setselectedAud] = useState("");
   const [selectedMusic, setselectedMusic] = useState("");
+  const [audNum, setAudNum] = useState();
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  let time_stamp = document.getElementById("audioTime")?.currentTime;
+  // let time_stamp = document.getElementById("audioTime")?.currentTime;
 
   const topicSelected = (svid) => {
     setselectedTop(svid);
   };
 
-  const handleTimestamp = () => {
-    setInterval(() => {
-      time_stamp = document.getElementById("audioTime")?.currentTime;
-      if (document.getElementById("audioTime")?.play == true) {
-        ipcRenderer.invoke("timestamp", 0 + " " + time_stamp + " " + "run");
+  const handleTimestamp = (aud_num) => {};
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      let time_stamp = document.getElementById("audioTime")?.currentTime;
+      if (isPlaying) {
+        ipcRenderer.invoke(
+          "timestamp",
+          audNum + " " + time_stamp + " " + "run"
+        );
       } else {
         ipcRenderer.invoke("timestamp", 0 + " " + 0 + " " + "halt");
       }
-    }, 1000);
-  };
+    }, 10);
+
+    return () => clearInterval(intervalId);
+  }, [audNum, isPlaying]);
   return (
     <div
       className="text-center"
@@ -44,8 +53,11 @@ function Main() {
         // textAlign: "center",
         backgroundRepeat: "no-repeat",
       }}
+      unselectable="on"
+      onselectstart="return false;"
+      onmousedown="return false;"
     >
-      <div className="title">Sri Sathya Sai Speaks</div>
+      {/* <div className="title">Sri Sathya Sai Speaks</div> */}
       {!show ? (
         <div>
           <Container fluid className="kalakar">
@@ -69,8 +81,8 @@ function Main() {
       {selectedTop ? (
         show ? (
           <>
-            <Container className="display_cont">
-              <Row>
+            <Container className="display_host">
+              <Row className="display_cont">
                 <Row style={{ marginLeft: "5px", paddingBottom: "24px" }}>
                   <Col xs lg={2} style={{ textAlign: "end" }}>
                     <img className="mand" src={mandala} alt="" />
@@ -90,6 +102,11 @@ function Main() {
                             className="play_mand p-2"
                             src={aud_mand}
                             alt=""
+                            onClick={() => {
+                              setselectedAud(item.topic_name);
+                              setselectedMusic(item.aud);
+                              setAudNum(item.aud_num);
+                            }}
                           />
                         </Col>
                         <Col xs lg={10} style={{ textAlign: "start" }}>
@@ -103,7 +120,7 @@ function Main() {
                             onClick={() => {
                               setselectedAud(item.topic_name);
                               setselectedMusic(item.aud);
-                              handleTimestamp();
+                              setAudNum(item.aud_num);
                             }}
                           >
                             {item.topic_name}
@@ -119,6 +136,13 @@ function Main() {
                     handleClose();
                     setselectedAud("");
                     setselectedMusic("");
+                    setIsPlaying(false);
+                    ipcRenderer
+                      .invoke("broadcast", 0 + " " + 0 + " " + "halt")
+                      .then((result) => {
+                        // ...
+                        //console.log(result);
+                      });
                   }}
                 >
                   <img className="lang_mandala" src={lang_mand} alt="..." />
@@ -131,20 +155,29 @@ function Main() {
             </audio> */}
 
             <audio
-              onPlay={() =>
+              onPlay={() => {
                 ipcRenderer
-                  .invoke("broadcast", 0 + " " + 0 + " " + "run")
+                  .invoke("broadcast", audNum + " " + 0 + " " + "run")
                   .then((result) => {
                     // ...
                     //console.log(result);
-                  })
-              }
+                  });
+                setIsPlaying(true);
+              }}
               id="audioTime"
               src={selectedMusic}
-              controls
+              controls={false}
               autoPlay
               onEnded={() => {
                 ipcRenderer.invoke("timestamp", 0 + " " + 0 + " " + "halt");
+                setIsPlaying(false);
+                setselectedAud("");
+                ipcRenderer
+                  .invoke("broadcast", 0 + " " + 0 + " " + "halt")
+                  .then((result) => {
+                    // ...
+                    //console.log(result);
+                  });
               }}
             ></audio>
           </>
